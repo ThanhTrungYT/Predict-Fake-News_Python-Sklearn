@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake News Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 {    
+            text-align: center;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        .result {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .progress-container {
+            background: #e0e0e0;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 25px;
+            margin-top: 10px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            line-height: 25px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .fake {
+            background: linear-gradient(90deg, #ff4d4d, #ff1a1a);
+        }
+
+        .real {
+            background: linear-gradient(90deg, #4CAF50, #2e7d32);
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Fake News Detector</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <!-- Ô nhập URL -->
+        <input type="text" name="url"
+               placeholder="Enter article URL...">
+
+        <p style="text-align:center; margin:5px 0;">OR</p>
+
+        <!-- Ô nhập nội dung -->
+        <textarea name="text"
+                  placeholder="Enter news text here..."></textarea>
+
+        <button type="submit">Check</button>
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+        <h2>{{ prediction }}</h2>
+
+        <div class="progress-container">
+            <div class="progress-bar {% if prediction == 'Fake News' %}fake{% else %}real{% endif %}"
+                 style="width: {{ confidence }}%;">
+                {{ confidence }}%
+            </div>
+        </div>
+
+        {% if source %}
+        <p><strong>Source:</strong> {{ source }}</p>
+        {% endif %}
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
+{% if error %}
+<p style="color:red;">{{ error }}</p>
+{% endif %}
