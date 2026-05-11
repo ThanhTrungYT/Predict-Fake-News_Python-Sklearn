@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from ml.predict import predict_text
-from .models import DetectionHistory
 
 import requests
 from bs4 import BeautifulSoup
@@ -53,13 +52,6 @@ def home(request):
             context["prediction"] = result["label"]
             context["confidence"] = result["confidence"]
 
-            DetectionHistory.objects.create(
-                url=url if url else None,
-                content=text[:2000],
-                prediction=result["label"],
-                confidence=result["confidence"]
-            )
-
     return render(request, "index.html", context)
 
 @api_view(["POST"])
@@ -88,14 +80,6 @@ def predict_api(request):
 
     # 🔥 Predict
     result = predict_text(text)
-
-    # 💾 Lưu DB
-    DetectionHistory.objects.create(
-        url=url if url else None,
-        content=text[:2000],
-        prediction=result["label"],
-        confidence=result["confidence"]
-    )
 
     return Response({
         "prediction": result["label"],
