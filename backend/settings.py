@@ -64,9 +64,19 @@ DATABASES = {
     }
 }
 
-# Vercel Serverless has a read-only filesystem except /tmp.
+# Serverless platforms (incl. Vercel) have a read-only project dir; /tmp is writable.
 # Also avoid DB-backed sessions on serverless.
-if os.environ.get("VERCEL") == "1" or os.environ.get("VERCEL") == "true":
+_is_serverless = any(
+    os.environ.get(k)
+    for k in [
+        "VERCEL",
+        "VERCEL_REGION",
+        "VERCEL_ENV",
+        "AWS_LAMBDA_FUNCTION_NAME",
+        "AWS_EXECUTION_ENV",
+    ]
+)
+if _is_serverless or str(BASE_DIR).startswith("/var/task"):
     DATABASES["default"]["NAME"] = "/tmp/db.sqlite3"
     SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
 
