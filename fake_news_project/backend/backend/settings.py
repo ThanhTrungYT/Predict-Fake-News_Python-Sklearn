@@ -64,6 +64,21 @@ DATABASES = {
     }
 }
 
+# Serverless (Vercel): project dir is read-only; use /tmp for SQLite.
+_is_serverless = any(
+    os.environ.get(k)
+    for k in [
+        "VERCEL",
+        "VERCEL_REGION",
+        "VERCEL_ENV",
+        "AWS_LAMBDA_FUNCTION_NAME",
+        "AWS_EXECUTION_ENV",
+    ]
+)
+if _is_serverless or str(BASE_DIR).startswith("/var/task"):
+    DATABASES["default"]["NAME"] = "/tmp/db.sqlite3"
+    SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
+
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = "UTC"
 USE_I18N = True
