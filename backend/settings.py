@@ -64,6 +64,12 @@ DATABASES = {
     }
 }
 
+# Vercel Serverless has a read-only filesystem except /tmp.
+# Also avoid DB-backed sessions on serverless.
+if os.environ.get("VERCEL") == "1" or os.environ.get("VERCEL") == "true":
+    DATABASES["default"]["NAME"] = "/tmp/db.sqlite3"
+    SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
+
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = "UTC"
 USE_I18N = True
