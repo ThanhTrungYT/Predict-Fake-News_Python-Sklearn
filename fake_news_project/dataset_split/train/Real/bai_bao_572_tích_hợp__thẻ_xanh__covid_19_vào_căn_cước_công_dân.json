@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "Nguyễn Đức Hạnh"
+  ],
+  "date_download": "2026-04-08 23:20:16",
+  "date_modify": null,
+  "date_publish": "2021-10-03T04:20:38+00:00",
+  "description": "Hiện nay, Bộ Công an đang triển khai các ứng dụng, tiện ích trên nền tảng Cơ sở dữ liệu quốc gia về dân cư và thẻ CCCD gắn chip phục vụ nhân dân thực hiện | Cổng tin tức thành phố Hải Phòng",
+  "filename": "bai_bao_572_tích_hợp__thẻ_xanh__covid_19_vào_căn_cước_công_dân.json",
+  "image_url": "https://thanhphohaiphong.gov.vn/wp-content/uploads/2021/10/Bo-Cong-an-Tich-hop-‘the-xanh-COVID-19-vao-can-cuoc-cong-dan.png",
+  "language": "vi",
+  "localpath": null,
+  "maintext": "Đặc biệt với tình hình phòng chống dịch COVID-19 cấp bách như hiện nay, công dân sử dụng duy nhất thẻ căn cước công dân (CCCD) gắn chip do Bộ Công an phát hành đã được tích hợp những tiện ích sau:\n\n–Thông tin thẻ xanh, tiêm chủng, giấy đi đường, thông tin xét nghiệm, giấy phép lái xe, thông tin về hưởng chính sách theo Nghị quyết 68/NQ-CP và nhiều tiện ích khác.\n\n–Tích hợp người phụ thuộc đi cùng với người có CCCD gắn chip(con chưa đủ 14 tuổi, người mất năng lực hành vi dân sự,…).\n\nDữ liệu công dân được đối sánh với Cơ sở dữ liệu quốc gia về dân cư qua quy trình xác minh đảm bảo chính xác. Với công dân được tiêm 2 mũi sẽ được tích hợp thẻ xanh, tiêm 1 mũi được tích hợp thẻ vàng trên thẻ CCCD gắn chip.\n\nDữ liệu công dân được bảo đảm tuyệt đối, khi các cá nhân, tổ chức không thể đọc và sao lưu dữ liệu cá nhân, dữ liệu được tích hợp của công dân.\n\nNgoài các tiện ích trên, công dân có thể dễ dàng đăng ký điểm checkpoint cho nơi ở hoặc dán trên các trụ sở, cơ quan, doanh nghiệp, siêu thị hoặc nơi công cộng. Chức năng quản lý điểm checkpoint giúp doanh nghiệp, tổ chức theo dõi, quản lý về nguy cơ lây nhiễm COVID-19 của cán bộ, nhân viên và khách ra vào trụ sở cơ quan. Từ đó chủ động đưa ra các biện pháp phòng, chống dịch hiệu quả, kịp thời.\n\nDữ liệu này được cập nhật, bổ sung từ rất nhiều các nguồn vào hệ thống Cơ sở dữ liệu quốc gia về dân cư như: Dữ liệu quản lý người nước ngoài, dữ liệu từ các tổ chức, doanh nghiệp, dữ liệu y tế, thông tin tiêm chủng, F0, F0 khỏi bệnh, kê khai y tế, công dân làm thủ tục cấp thẻ CCCD… Thông tin này đều được rà soát, kiểm tra, xác minh đặc biệt là từ lực lượng Công an cơ sở nhằm đảm bảo dữ liệu luôn chính xác, khớp với dữ liệu được lưu trữ trong Cơ sở dữ liệu quốc gia về dân cư.\n\nBên cạnh các thông tin được in trên bền mặt trước, sau của thẻ CCCD thì mã QR code ở mặt trước của thẻ CCCD với 7 trường thông tin cơ bản của công dân được khai thác nhanh chóng, tiện ích, rất phù hợp với yêu cầu đọc thông tin nhanh của các cơ quan, tổ chức, cá nhân.\n\nTại mặt sau của thẻ CCCD có chứa mã MRZ (Machine-readable zone), mã hàng không dân dụng quốc tế theo tiêu chuẩn ICAO. Chip điện tử được tích hợp các trường thông tin cơ bản của công dân, có chứa thông tin sinh trắc học ảnh chân dung và vân tay theo tiêu chuẩn ICAO. Tất cả các thông tin được lưu trữ đều được bảo mật, đảm bảo an ninh, an toàn thông tin của Ban Cơ yếu Chính phủ.\n\nTính đến nay, Bộ Công an trả khoảng 45 triệu thẻ CCCD gắn chip điện tử tới tay người dân. Ứng dụng này cùng với nền tảng Cơ sở dữ liệu quốc gia về dân cư được sử dụng vào phòng, chống dịch với những tiện ích quan trọng.",
+  "source_domain": "thanhphohaiphong.gov.vn",
+  "title": "Tích hợp ‘thẻ xanh’ COVID-19 vào căn cước công dân",
+  "title_page": null,
+  "title_rss": null,
+  "url": "https://thanhphohaiphong.gov.vn/tich-hop-the-xanh-covid-19-vao-can-cuoc-cong-dan.html"
+}

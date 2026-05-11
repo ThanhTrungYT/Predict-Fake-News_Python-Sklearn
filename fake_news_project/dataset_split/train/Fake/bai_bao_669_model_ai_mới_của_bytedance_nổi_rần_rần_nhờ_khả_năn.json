@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "VietNamNet News",
+    "Thế VinhXem các bài viết của tác giả",
+    "Thế Vinh",
+    "Xem các bài viết của tác giả"
+  ],
+  "date_download": "2026-04-08 22:18:19",
+  "date_modify": null,
+  "date_publish": "",
+  "description": "ByteDance, công ty mẹ TikTok, vừa giới thiệu mô hình trí tuệ nhân tạo (AI) có khả năng biến hình ảnh và âm thanh thành những đoạn video chân thực.",
+  "filename": "bai_bao_669_model_ai_mới_của_bytedance_nổi_rần_rần_nhờ_khả_năn.json",
+  "image_url": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/2/5/model-ai-moi-cua-bytedance-noi-ran-ran-nho-kha-nang-deepfake-130712.jpeg?width=0&s=fKvkFjtXF8_fAH8uU8xwDw",
+  "language": "vi",
+  "localpath": null,
+  "maintext": "Mô hình đa phương thức có tên OmniHuman-1 có thể tạo ra những video sống động nhân vật đang nói, hát và di chuyển với chất lượng “vượt trội so với những phương pháp tạo video hiện tại” - theo nhóm phát triển của ByteDance.\n\nCông nghệ AI tạo hình ảnh, video và âm thanh giống người thật còn được gọi là “deepfake” - công nghệ ngày càng được sử dụng nhiều trong các vụ lừa đảo cũng như giải trí.\n\nByteDanceđang là một trong những công ty AI “hot” nhất ở Trung Quốc. Ứng dụng Doubao của công ty là ứng dụng phổ biến nhất với người dùng đại lục.\n\nMặc dù OmniHuman-1 chưa được phát hành rộng rãi ra công chúng, song các đoạn video mẫu đã nhanh chóng lan truyền rộng rãi.\n\nMột demo nổi bật là video dài 23 giây mô tả Albert Einstein đang phát biểu. Trang công nghệ TechCrunch mô tả sản phẩm của ứng dụng này “tuyệt vời đến mức gây sốc” và “là những video deepfake chân thực nhất cho đến nay”.\n\nNhà phát triển cho biết, OmniHuman-1 chỉ cần dữ liệu tham khảo là một hình ảnh duy nhất cùng dữ liệu âm thanh như lời nói hoặc giọng hát để tạo ra một đoạn video có độ dài tùy ý.\n\nTỷ lệ khung hình video đầu ra có thể được điều chỉnh, cũng như “tỷ lệ cơ thể” của nhân vật trong đó.\n\nKhông chỉ vậy, mô hình AI được đào tạo dựa trên 19.000 giờ nội dung video từ các nguồn không công khai, còn có khả năng chỉnh sửa video hiện có, thậm chí là thay đổi chuyển động cử chỉ tay, chân của con người với mức độ thuyết phục.\n\nDù vậy, ByteDance cũng thừa nhận OmniHuman-1 chưa hoàn hảo, khi vẫn gặp khó khăn với một số tư thế nhất định, đồng thời “hình ảnh tham khảo chất lượng thấp” sẽ không tạo ra video tốt nhất.\n\nMô hình AI mới của ByteDance cho thấy những tiến bộ của Trung Quốc bất chấp nỗ lực hạn chế xuất khẩu công nghệ từ phía Washington.\n\nVào năm ngoái, deepfake chính trị đã lan rộng trên toàn cầu. Tại Moldova, các video deepfake đã mô phỏng tổng thống Maia Sandu của đất nước phát biểu từ chức.\n\nVà tại Nam Phi, một deepfake của rapper Eminem ủng hộ một đảng đối lập Nam Phi đã lan truyền trước thềm bầu cử của quốc gia này.\n\nDeepfake cũng ngày càng được sử dụng để thực hiện các phạm tội tài chính. Người tiêu dùng bị lừa đảo bởi các deepfake của các ngôi sao nổi tiếng khuyến nghị đầu tư, đưa ra cơ hội đầu tư giả mạo, trong khi các công ty cũng mất hàng triệu USD bởi những kẻ giả mạo giám đốc điều hành cấp cao.\n\nTheo Deloitte, nội dung do AI tạo ra đã góp phần vào hơn 12 tỷ USD thiệt hại từ lừa đảo vào năm 2023 và có thể đạt tới 40 tỷ USD ở Mỹ vào năm 2027.\n\nVào tháng 2 năm ngoái, hàng trăm người trong cộng đồng AI đã ký một bức thư kêu gọi quy định nghiêm ngặt về deepfake. Trong bối cảnh chưa có luật hình sự hóa deepfake ở cấp liên bang tại Mỹ, hơn 10 bang đã ban hành các đạo luật chống lại việc giả mạo bằng AI.\n\nTuy nhiên, việc phát hiện deepfake không hề dễ dàng. Mặc dù một số mạng xã hội và công cụ tìm kiếm đã có các biện pháp hạn chế sự lan truyền của chúng, nhưng lượng nội dung deepfake trên mạng vẫn đang tăng trưởng với tốc độ đáng báo động.\n\nTrong một khảo sát vào tháng 5/2024 từ công ty xác minh danh tính Jumio, 60% người tham gia cho biết, họ đã gặp phải một deepfake trong năm qua; 72% người khảo sát trả lời họ lo lắng về việc bị lừa bởi deepfake hàng ngày, trong khi đa số ủng hộ việc thông qua các đạo luật để giải quyết sự tràn lan của các video giả mạo do AI tạo ra.",
+  "source_domain": "vietnamnet.vn",
+  "title": "Model AI mới của ByteDance nổi rần rần nhờ khả năng ‘deepfake’",
+  "title_page": null,
+  "title_rss": null,
+  "url": "https://vietnamnet.vn/model-ai-moi-cua-bytedance-noi-ran-ran-nho-kha-nang-deepfake-2368831.html"
+}

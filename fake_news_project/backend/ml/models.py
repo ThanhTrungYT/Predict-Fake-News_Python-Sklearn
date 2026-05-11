@@ -40,7 +40,6 @@ def get_models(y_train=None):
         )
     }
 
-    # Optional XGBoost
     try:
         from xgboost import XGBClassifier
 
