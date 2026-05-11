@@ -53,12 +53,16 @@ def home(request):
             context["prediction"] = result["label"]
             context["confidence"] = result["confidence"]
 
-            DetectionHistory.objects.create(
-                url=url if url else None,
-                content=text[:2000],
-                prediction=result["label"],
-                confidence=result["confidence"]
-            )
+            try:
+                DetectionHistory.objects.create(
+                    url=url if url else None,
+                    content=text[:2000],
+                    prediction=result["label"],
+                    confidence=result["confidence"],
+                )
+            except Exception as e:
+                # On Vercel Serverless, sqlite/migrations may not exist; don't crash the request.
+                print("WARN: save DetectionHistory failed:", str(e))
 
     return render(request, "index.html", context)
 
@@ -90,12 +94,15 @@ def predict_api(request):
     result = predict_text(text)
 
     # 💾 Lưu DB
-    DetectionHistory.objects.create(
-        url=url if url else None,
-        content=text[:2000],
-        prediction=result["label"],
-        confidence=result["confidence"]
-    )
+    try:
+        DetectionHistory.objects.create(
+            url=url if url else None,
+            content=text[:2000],
+            prediction=result["label"],
+            confidence=result["confidence"],
+        )
+    except Exception as e:
+        print("WARN: save DetectionHistory failed:", str(e))
 
     return Response({
         "prediction": result["label"],
