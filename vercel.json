@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "fake_news_project/backend/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "fake_news_project/backend/wsgi.py"
+        }
+    ]
+}
